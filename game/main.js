@@ -17,7 +17,7 @@ function playRound(round){
     winners.push(winner);
     logRound(round, playerSelection, computerSelection, winner)
 }
-
+//gets the player choice and compares it to the array
 function playerChoice(){
     let input = prompt("Choose rock, paper, or scissors!");
     while (input == null) {
@@ -37,7 +37,7 @@ function playerChoice(){
     }
 return input;
 }
-
+//picks a random element from array using math.random
 function computerChoice(){
     return choices[Math.floor(Math.random() * choices.length)];
 }
